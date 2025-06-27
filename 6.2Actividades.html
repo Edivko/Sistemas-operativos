@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6.2 ACTIVIDADES - ESCOM</title>
+<link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pagina-teoria">
+
+  <!--<div class="barra-gob"></div>-->
+    <div class="contenedor-logos">
+        <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn">
+        <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom">
+        <div class="enlaces-rapidos">
+            <a href="#">Directorio</a> |
+            <a href="#">Correo</a> |
+            <a href="https://www.ipn.mx/assets/files/website/docs/inicio/calendarioipn-escolarizada.pdf">Calendario</a> |
+            <a href="#">Protección de Datos</a>
+        </div>
+    </div>
+
+  <header>
+        <h1>ESCOM</h1>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="6.2Home.html">Regresa 6.2</a>         
+            <a href="HReferencias.html">Referencias</a>
+            <a href="#glosario">Glosario</a>
+            <a href="#footer">Mapa del sitio</a>
+        </nav>
+    </header>
+
+  <main>
+<!-- ACTIVIDADES EN LISTA-->
+<section class="actividades-acordeon">
+  <h2 class="titulo-ilustracion"> Actividades de la Unidad 6.2</h2>
+
+<div class="acordeon-item">
+  <button class="acordeon-btn">6.2 Actividad - Virtualización <span class="flecha">▶</span></button>
+  <div class="acordeon-panel">
+
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿Cuál de los siguientes beneficios de seguridad se asocia directamente con el uso de máquinas virtuales?</strong></p>
+    <label><input type="radio" name="q1_u62" value="a"> A) Mayor velocidad de la memoria RAM física</label><br>
+    <label><input type="radio" name="q1_u62" value="b"> B) Aislamiento entre entornos para limitar el impacto de ataques</label><br>
+    <label><input type="radio" name="q1_u62" value="c"> C) Acceso directo al hardware desde múltiples sistemas operativos</label><br>
+    <label><input type="radio" name="q1_u62" value="d"> D) Control exclusivo del usuario sobre el hipervisor</label><br>
+    <div id="feedback-q1_u62" class="feedback"></div>
+    <button type="button" onclick="validarRespuesta('q1_u62', 'b')" class="boton-validar">Validar pregunta 1</button>
+
+    <hr>
+
+    <!-- Pregunta 2 -->
+    <p><strong>2. ¿Qué tipo de virtualización permite centralizar entornos de usuario en un servidor remoto?</strong></p>
+    <label><input type="radio" name="q2_u62" value="a"> A) Virtualización de red</label><br>
+    <label><input type="radio" name="q2_u62" value="b"> B) Virtualización de servidores</label><br>
+    <label><input type="radio" name="q2_u62" value="c"> C) Virtualización de escritorios</label><br>
+    <label><input type="radio" name="q2_u62" value="d"> D) Virtualización de almacenamiento</label><br>
+    <div id="feedback-q2_u62" class="feedback"></div>
+    <button type="button" onclick="validarRespuesta('q2_u62', 'c')" class="boton-validar">Validar pregunta 2</button>
+
+    <hr>
+
+    <!-- Pregunta 3 -->
+    <p><strong>3. ¿Qué riesgo de seguridad se presenta si un atacante compromete el hipervisor?</strong></p>
+    <label><input type="radio" name="q3_u62" value="a"> A) El atacante solo afecta la VM actual sin acceso a otras</label><br>
+    <label><input type="radio" name="q3_u62" value="b"> B) El hipervisor se vuelve inmune a ataques posteriores</label><br>
+    <label><input type="radio" name="q3_u62" value="c"> C) El atacante puede tomar control total sobre todas las máquinas virtuales</label><br>
+    <label><input type="radio" name="q3_u62" value="d"> D) Solo se bloquean las conexiones de red internas</label><br>
+    <div id="feedback-q3_u62" class="feedback"></div>
+    <button type="button" onclick="validarRespuesta('q3_u62', 'c')" class="boton-validar">Validar pregunta 3</button>
+
+  </div>
+</div>
+
+<div class="acordeon-item">
+  <button class="acordeon-btn">6.2.1 Emulación <span class="flecha">▶</span></button>
+  <div class="acordeon-panel">
+
+    <p>La emulación permite que un sistema informático simule otro completamente distinto, incluyendo diferencias de arquitectura. Es clave para ejecutar software diseñado para hardware obsoleto o diferente, y se implementa mediante programas llamados emuladores.</p>
+
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿Cuál es una diferencia clave entre la emulación y la virtualización?</strong></p>
+    <label><input type="radio" name="q1_u621" value="a"> A) La emulación requiere un hipervisor para funcionar</label><br>
+    <label><input type="radio" name="q1_u621" value="b"> B) La virtualización permite ejecutar arquitecturas distintas</label><br>
+    <label><input type="radio" name="q1_u621" value="c"> C) La emulación traduce instrucciones de una arquitectura diferente</label><br>
+    <label><input type="radio" name="q1_u621" value="d"> D) La emulación es más rápida que la virtualización</label><br>
+    <div id="feedback-q1_u621" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q1_u621', 'c')">Validar pregunta 1</button>
+
+    <hr>
+
+    <!-- Pregunta 2 -->
+    <p><strong>2. ¿Cuál de las siguientes es una ventaja de la emulación?</strong></p>
+    <label><input type="radio" name="q2_u621" value="a"> A) Siempre mejora el rendimiento del sistema</label><br>
+    <label><input type="radio" name="q2_u621" value="b"> B) Ejecuta software antiguo en hardware moderno</label><br>
+    <label><input type="radio" name="q2_u621" value="c"> C) Requiere menos potencia que un sistema físico</label><br>
+    <label><input type="radio" name="q2_u621" value="d"> D) Utiliza menos memoria que la virtualización</label><br>
+    <div id="feedback-q2_u621" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q2_u621', 'b')">Validar pregunta 2</button>
+
+    <hr>
+
+    <!-- Pregunta 3 -->
+    <p><strong>3. ¿Cuál es una desventaja importante de la emulación?</strong></p>
+    <label><input type="radio" name="q3_u621" value="a"> A) Requiere una arquitectura compatible</label><br>
+    <label><input type="radio" name="q3_u621" value="b"> B) No permite probar software en distintas plataformas</label><br>
+    <label><input type="radio" name="q3_u621" value="c"> C) Tiene menor rendimiento por la traducción de instrucciones</label><br>
+    <label><input type="radio" name="q3_u621" value="d"> D) Solo funciona con sistemas modernos</label><br>
+    <div id="feedback-q3_u621" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q3_u621', 'c')">Validar pregunta 3</button>
+<hr>
+<p><strong>4. Relaciona correctamente cada afirmación con si representa una ventaja (V) o una desventaja (D) de la emulación:</strong></p>
+
+<div class="emparejamiento">
+  <p>a) Permite conservar y ejecutar software antiguo → 
+    <input type="text" id="emu1" placeholder="V o D">
+  </p>
+  <p>b) Requiere traducir instrucciones, lo que reduce el rendimiento → 
+    <input type="text" id="emu2" placeholder="V o D">
+  </p>
+  <p>c) Permite probar software en distintas plataformas sin hardware real → 
+    <input type="text" id="emu3" placeholder="V o D">
+  </p>
+  <p>d) Requiere mayor potencia de cómputo que un sistema nativo → 
+    <input type="text" id="emu4" placeholder="V o D">
+  </p>
+
+  <button type="button" onclick="validarEmparejamientoEmu()">Validar emparejamiento</button>
+  <div id="feedback-emparejamiento-emu" style="margin-top: 10px;"></div>
+</div>
+
+  </div>
+</div>
+
+
+
+
+  <div class="acordeon-item">
+  <button class="acordeon-btn">6.2.2 Actividad - Virtualización asistida por hardware <span class="flecha">▶</span></button>
+  <div class="acordeon-panel">
+
+    <p>La virtualización asistida por hardware utiliza funciones específicas del procesador para mejorar el rendimiento, estabilidad y aislamiento de máquinas virtuales. Tecnologías como Intel VT-x y AMD-V permiten que las VMs accedan directamente a instrucciones privilegiadas del procesador, reduciendo la intervención del hipervisor.</p>
+
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿Qué función principal cumple la virtualización asistida por hardware?</strong></p>
+    <label><input type="radio" name="q1_u622" value="a"> A) Reemplazar completamente al hipervisor</label><br>
+    <label><input type="radio" name="q1_u622" value="b"> B) Ejecutar sistemas operativos sin sistema anfitrión</label><br>
+    <label><input type="radio" name="q1_u622" value="c"> C) Optimizar la ejecución de máquinas virtuales mediante soporte del procesador</label><br>
+    <label><input type="radio" name="q1_u622" value="d"> D) Limitar las máquinas virtuales a un solo núcleo</label><br>
+    <div id="feedback-q1_u622" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q1_u622', 'c')">Validar pregunta 1</button>
+
+    <hr>
+
+    <!-- Pregunta 2 -->
+    <p><strong>2. ¿Qué tecnología corresponde a la virtualización asistida por hardware en procesadores Intel?</strong></p>
+    <label><input type="radio" name="q2_u622" value="a"> A) AMD-V</label><br>
+    <label><input type="radio" name="q2_u622" value="b"> B) ARM-H</label><br>
+    <label><input type="radio" name="q2_u622" value="c"> C) VT-x</label><br>
+    <label><input type="radio" name="q2_u622" value="d"> D) VMWare Tools</label><br>
+    <div id="feedback-q2_u622" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q2_u622', 'c')">Validar pregunta 2</button>
+
+    <hr>
+
+    <!-- Pregunta 3 -->
+    <p><strong>3. ¿Cuál de los siguientes es un beneficio de la virtualización asistida por hardware?</strong></p>
+    <label><input type="radio" name="q3_u622" value="a"> A) Reduce la compatibilidad de sistemas operativos modernos</label><br>
+    <label><input type="radio" name="q3_u622" value="b"> B) Permite una ejecución más lenta para pruebas controladas</label><br>
+    <label><input type="radio" name="q3_u622" value="c"> C) Mejora el aislamiento entre máquinas virtuales</label><br>
+    <label><input type="radio" name="q3_u622" value="d"> D) Obliga a ejecutar solo sistemas de 32 bits</label><br>
+    <div id="feedback-q3_u622" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q3_u622', 'c')">Validar pregunta 3</button>
+<hr>
+<p><strong>4. Relaciona correctamente cada concepto con su descripción:</strong></p>
+
+<div class="emparejamiento">
+  <ul>
+    <li><strong>a)</strong> Tecnología de Intel que permite asistencia de CPU para entornos virtuales.</li>
+    <li><strong>b)</strong> Mejora la separación entre VMs para evitar interferencias.</li>
+    <li><strong>c)</strong> Tecnología de AMD que permite soporte de virtualización a nivel de hardware.</li>
+  </ul>
+
+  <p>1. Intel VT-x: 
+    <input type="text" id="virt1" placeholder="a, b o c">
+  </p>
+  <p>2. AMD-V: 
+    <input type="text" id="virt2" placeholder="a, b o c">
+  </p>
+  <p>3. Aislamiento mejorado: 
+    <input type="text" id="virt3" placeholder="a, b o c">
+  </p>
+
+  <div id="feedback-emparejamiento-virt" style="margin-top: 10px;"></div>
+  <button type="button" onclick="validarEmparejamientoVirt()">Validar emparejamiento</button>
+</div>
+
+  </div>
+</div>
+
+
+<div class="acordeon-item">
+  <button class="acordeon-btn">6.2.3 Actividad - Paravirtualización <span class="flecha">▶</span></button>
+  <div class="acordeon-panel">
+
+    <p>La paravirtualización es una técnica de virtualización en la que el sistema operativo invitado está modificado para colaborar directamente con el hipervisor mediante llamadas especiales (hypercalls). Esto permite un mejor rendimiento, pero limita la compatibilidad con sistemas no modificables.</p>
+
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿Qué característica define a la paravirtualización?</strong></p>
+    <label><input type="radio" name="q1_u623" value="a"> A) El sistema operativo no sabe que está virtualizado</label><br>
+    <label><input type="radio" name="q1_u623" value="b"> B) El hipervisor actúa como sistema operativo principal</label><br>
+    <label><input type="radio" name="q1_u623" value="c"> C) El sistema operativo invitado realiza llamadas especiales al hipervisor</label><br>
+    <label><input type="radio" name="q1_u623" value="d"> D) Se utiliza solo para ejecutar juegos antiguos</label><br>
+    <div id="feedback-q1_u623" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q1_u623', 'c')">Validar pregunta 1</button>
+
+    <hr>
+
+    <!-- Pregunta 2 -->
+    <p><strong>2. ¿Cuál es una ventaja principal de la paravirtualización?</strong></p>
+    <label><input type="radio" name="q2_u623" value="a"> A) Mejora el rendimiento al evitar la emulación completa del hardware</label><br>
+    <label><input type="radio" name="q2_u623" value="b"> B) No requiere ninguna modificación del sistema operativo</label><br>
+    <label><input type="radio" name="q2_u623" value="c"> C) Utiliza BIOS extendida para acelerar la virtualización</label><br>
+    <label><input type="radio" name="q2_u623" value="d"> D) Aumenta la compatibilidad con software propietario</label><br>
+    <div id="feedback-q2_u623" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q2_u623', 'a')">Validar pregunta 2</button>
+
+    <hr>
+
+    <!-- Pregunta 3 -->
+    <p><strong>3. ¿Cuál es una desventaja de la paravirtualización?</strong></p>
+    <label><input type="radio" name="q3_u623" value="a"> A) Solo se puede usar en computadoras de escritorio</label><br>
+    <label><input type="radio" name="q3_u623" value="b"> B) Requiere modificar el sistema operativo huésped</label><br>
+    <label><input type="radio" name="q3_u623" value="c"> C) No permite gestionar múltiples recursos</label><br>
+    <label><input type="radio" name="q3_u623" value="d"> D) Disminuye el rendimiento de la red</label><br>
+    <div id="feedback-q3_u623" class="feedback"></div>
+    <button type="button" class="boton-validar" onclick="validarRespuesta('q3_u623', 'b')">Validar pregunta 3</button>
+  <!-- Tabla editable para completar ventajas y desventajas -->
+<p><strong>2. Completa la siguiente tabla con las ventajas y desventajas de la paravirtualización:</strong></p>
+<div class="tabla-acceso">
+  <table>
+    <thead>
+      <tr>
+        <th>Ventajas</th>
+        <th>Desventajas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" id="ventaja1" placeholder="Rendimiento..." style="width: 95%;"></td>
+        <td><input type="text" id="desventaja1" placeholder="Requiere modificar..." style="width: 95%;"></td>
+      </tr>
+      <tr>
+        <td><input type="text" id="ventaja2" placeholder="Interacción directa..." style="width: 95%;"></td>
+        <td><input type="text" id="desventaja2" placeholder="Menor compatibilidad..." style="width: 95%;"></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="imagen-descripcion">Figura 2. Ventajas y desventajas de la paravirtualización. Completa cada celda con los conceptos clave.</p>
+</div>
+<button type="button" onclick="validarVentajasDesventajas()">Validar tabla</button>
+<div id="feedback-vd" style="margin-top: 10px;"></div>
+  </div>
+</div>
+
+
+
+
+
+<div class="acordeon-item">
+  <button class="acordeon-btn">6.2.4 Actividad - Contenedores <span class="flecha">▶</span></button>
+  <div class="acordeon-panel">
+    <form class="cuestionario" id="cuestionario_u624">
+
+      <p><strong>1. ¿Cuál es una de las principales diferencias entre un contenedor y una máquina virtual?</strong></p>
+      <label><input type="radio" name="q1_u624" value="a"> A) Los contenedores requieren más espacio en disco</label><br>
+      <label><input type="radio" name="q1_u624" value="b"> B) Las máquinas virtuales no necesitan hipervisor</label><br>
+      <label><input type="radio" name="q1_u624" value="c"> C) Los contenedores comparten el kernel del sistema anfitrión</label><br>
+      <label><input type="radio" name="q1_u624" value="d"> D) Las máquinas virtuales se inician más rápido</label><br>
+      <div id="feedback-q1_u624" class="feedback"></div>
+      <button type="button" class="boton-validar" onclick="validarRespuesta('q1_u624', 'c')">Validar pregunta 1</button>
+
+      <hr>
+
+      <p><strong>2. ¿Cuál de los siguientes entornos se utiliza para orquestar contenedores?</strong></p>
+      <label><input type="radio" name="q2_u624" value="a"> A) SELinux</label><br>
+      <label><input type="radio" name="q2_u624" value="b"> B) Docker</label><br>
+      <label><input type="radio" name="q2_u624" value="c"> C) Kubernetes</label><br>
+      <label><input type="radio" name="q2_u624" value="d"> D) Bash</label><br>
+      <div id="feedback-q2_u624" class="feedback"></div>
+      <button type="button" class="boton-validar" onclick="validarRespuesta('q2_u624', 'c')">Validar pregunta 2</button>
+
+      <hr>
+
+      <p><strong>3. ¿Qué característica hace a los contenedores ideales para arquitecturas de microservicios?</strong></p>
+      <label><input type="radio" name="q3_u624" value="a"> A) Su gran tamaño</label><br>
+      <label><input type="radio" name="q3_u624" value="b"> B) Su capacidad de ejecutar múltiples SO distintos</label><br>
+      <label><input type="radio" name="q3_u624" value="c"> C) Su aislamiento parcial</label><br>
+      <label><input type="radio" name="q3_u624" value="d"> D) Su ligereza y facilidad de despliegue</label><br>
+      <div id="feedback-q3_u624" class="feedback"></div>
+      <button type="button" class="boton-validar" onclick="validarRespuesta('q3_u624', 'd')">Validar pregunta 3</button>
+
+      <hr>
+<p><strong>4. Relaciona cada concepto con su descripción:</strong></p>
+<div class="emparejamiento">
+  <ul>
+    <li><strong>a)</strong> Sistema de orquestación de contenedores.</li>
+    <li><strong>b)</strong> Tecnología ligera de contenedores.</li>
+    <li><strong>c)</strong> Mecanismo de aislamiento entre contenedores.</li>
+  </ul>
+
+  <p>1. Docker: 
+    <input type="text" id="emp1_u624" placeholder="a, b o c">
+  </p>
+  <p>2. Kubernetes: 
+    <input type="text" id="emp2_u624" placeholder="a, b o c">
+  </p>
+  <p>3. Namespaces: 
+    <input type="text" id="emp3_u624" placeholder="a, b o c">
+  </p>
+
+  <button type="button" onclick="validarEmparejamientoContenedores()">Validar emparejamiento</button>
+  <div id="feedback-emparejamiento-contenedores" style="margin-top: 10px;"></div>
+</div>
+
+
+</section>
+
+
+   
+  </main>
+
+  <footer class="footer-oscuro" id="footer">
+    <div class="footer-contenido">
+      <div class="footer-contacto">
+        <p><strong>Escuela Superior de Cómputo</strong> - Sistemas Operativos - Unidad 6</p>
+      </div>
+      <hr>
+      <div class="footer-institucional">
+        <p>&copy; 2025 Instituto Politécnico Nacional</p>
+        <p>Av. Luis Enrique Erro S/N, Zacatenco, CDMX</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Ir arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

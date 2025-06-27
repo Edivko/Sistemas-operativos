@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6.2 TEORIA - ESCOM</title>
+  <link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pagina-teoria">
+
+  <!--<div class="barra-gob"></div>-->
+    <div class="contenedor-logos">
+        <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn">
+        <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom">
+        <div class="enlaces-rapidos">
+            <a href="#">Directorio</a> |
+            <a href="#">Correo</a> |
+            <a href="https://www.ipn.mx/assets/files/website/docs/inicio/calendarioipn-escolarizada.pdf">Calendario</a> |
+            <a href="#">Protección de Datos</a>
+        </div>
+    </div>
+
+  <header>
+        <h1>ESCOM</h1>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav-menu">
+            <a href="index.html">Inicio</a>
+            <a href="6.2Home.html">Regresa 6.2</a>
+            <div class="dropdown">
+                <a href="#up-next" class="dropdown-toggle">Contenido ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#6.2">6.2 Virtualización.</a>       
+                    <a href="#6.2.1">6.2.1 Emulación.</a>
+                    <a href="#6.2.2">6.2.2 Virtualización asistida por hardware.</a>
+                    <a href="#6.2.3">6.2.3 Paravirtualización.</a>
+                    <a href="#6.2.4">6.2.4 Contenedores.</a>
+                </div>
+            </div>
+            <a href="HReferencias.html">Referencias</a>
+            <a href="#glosario">Glosario</a>
+            <a href="#footer">Mapa del sitio</a>
+        </nav>
+    </header>
+
+  <main>
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.2">
+        <h2>6.2 Virtualización</h2>
+  <p>
+    La virtualización es una de las tecnologías más transformadoras en el ámbito de la informática moderna.
+    Consiste en la creación de versiones virtuales de componentes físicos, como servidores, sistemas operativos,
+    almacenamiento o redes, utilizando software especializado denominado <strong>hipervisor</strong>. Esto permite
+    ejecutar múltiples entornos de computación independientes sobre una misma infraestructura física,
+    maximizando el aprovechamiento de los recursos y proporcionando una gran flexibilidad.
+  </p>
+
+  <p><strong>Existen distintos tipos de virtualización:</strong></p>
+  <ul>
+    <li><strong>Virtualización de servidores:</strong> Permite dividir un servidor físico en múltiples servidores virtuales. Cada uno opera como una máquina independiente, con su propio sistema operativo, aplicaciones y configuración.</li>
+    <li><strong>Virtualización de escritorios:</strong> Utilizada para centralizar escritorios en un servidor y acceder a ellos desde distintos dispositivos remotos.</li>
+    <li><strong>Virtualización de aplicaciones:</strong> Las aplicaciones se ejecutan en un entorno virtual que es independiente del sistema operativo del usuario, facilitando la compatibilidad y el despliegue.</li>
+    <li><strong>Virtualización de red y almacenamiento:</strong> Crea representaciones virtuales de switches, routers o discos duros, facilitando su administración y escalabilidad.</li>
+  </ul>
+
+  <p><strong>Desde el punto de vista de la seguridad, la virtualización ofrece numerosos beneficios:</strong></p>
+  <ul>
+    <li><strong>Aislamiento:</strong> Cada máquina virtual está separada de las demás. Si una VM es comprometida, las demás no se ven afectadas.</li>
+    <li><strong>Entornos de pruebas seguros:</strong> Es posible probar software, configuraciones o incluso malware dentro de una VM sin poner en riesgo el sistema anfitrión.</li>
+    <li><strong>Snapshots y restauración rápida:</strong> Se pueden capturar estados del sistema y revertirlos en caso de incidentes de seguridad.</li>
+    <li><strong>Mejor gestión de parches y políticas:</strong> La virtualización permite actualizar sistemas de manera eficiente y aplicar políticas de seguridad homogéneas.</li>
+  </ul>
+
+  <p>
+    Sin embargo, esta tecnología también plantea <strong>nuevos retos de seguridad</strong>. Por ejemplo, si un atacante logra comprometer el hipervisor (lo que se conoce como <em>"escape de VM"</em>), podría obtener control total sobre todas las máquinas virtuales.
+    Por ello, es indispensable implementar <strong>controles adicionales</strong> como firewalls virtuales, segmentación de red, monitoreo de tráfico y actualizaciones constantes del software de virtualización.
+  </p>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.2.1">
+        <h2>6.2.1 Emulación</h2>
+  <p>
+    La emulación es una técnica que permite simular un sistema informático diferente, tanto en hardware como en software. A diferencia de la virtualización, que trabaja sobre arquitecturas similares, la emulación puede ejecutar software diseñado para una plataforma distinta a la del sistema anfitrión. 
+  </p>
+  <p>
+    Por ejemplo, se puede emular una consola de videojuegos antigua en una computadora moderna o correr software ARM en una arquitectura x86. Esto se realiza mediante un <strong>emulador</strong>, que traduce las instrucciones del sistema original al lenguaje del equipo actual.
+  </p>
+
+  <h3>Comparativa: Ventajas y Desventajas</h3>
+  <div class="tabla-acceso">
+    <table>
+      <thead>
+        <tr>
+          <th>Ventajas</th>
+          <th>Desventajas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Compatibilidad completa con plataformas obsoletas o incompatibles.</td>
+          <td>Desempeño reducido por la traducción constante de instrucciones.</td>
+        </tr>
+        <tr>
+          <td>Preservación digital de software y sistemas antiguos.</td>
+          <td>Mayor complejidad técnica y necesidad de potencia de cómputo.</td>
+        </tr>
+        <tr>
+          <td>Pruebas multiplataforma sin hardware físico real.</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    En resumen, la emulación es ideal cuando se necesita ejecutar sistemas sobre arquitecturas diferentes o recuperar entornos antiguos, donde la virtualización no es viable.
+  </p>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.2.2">
+        <h2>6.2.2 Virtualización asistida por hardware</h2>
+  <p>
+    Esta técnica optimiza el rendimiento de las máquinas virtuales mediante soporte directo del procesador físico. Las tecnologías más conocidas son:
+  </p>
+
+  <div class="cuadros-tecnologia">
+    <div class="cuadro-tecnologia">
+      <h3>Intel VT-x</h3>
+      <p>Virtualization Technology de Intel permite ejecutar VMs con acceso directo a instrucciones privilegiadas del procesador.</p>
+    </div>
+
+    <div class="cuadro-tecnologia">
+      <h3>AMD-V</h3>
+      <p>La tecnología de AMD para virtualización optimiza el aislamiento entre máquinas virtuales y mejora el rendimiento de entornos virtuales.</p>
+    </div>
+  </div>
+
+  <h3>Beneficios clave</h3>
+  <ul>
+    <li><strong>Mejor rendimiento:</strong> Ejecución más cercana al hardware real.</li>
+    <li><strong>Mayor aislamiento:</strong> Menor interferencia entre máquinas virtuales.</li>
+    <li><strong>Soporte de 64 bits y múltiples núcleos:</strong> Compatibilidad con sistemas modernos.</li>
+  </ul>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.2.3">
+        <h2>6.2.3 Paravirtualización</h2>
+  <p>
+    La paravirtualización es una técnica de virtualización en la que el sistema operativo huésped está modificado para reconocer que se ejecuta en un entorno virtual. A diferencia de la virtualización completa, esta modalidad permite que el sistema invitado realice <strong>llamadas directas al hipervisor</strong> (hypercalls), lo que mejora la eficiencia general.
+  </p>
+  <p>
+    En lugar de emular todo el hardware, la paravirtualización delega ciertas operaciones al hipervisor, reduciendo la carga del sistema y acelerando la ejecución de procesos virtuales.
+  </p>
+
+  <div class="cuadros-tecnologia">
+    <div class="cuadro-tecnologia">
+      <h3>Xen</h3>
+      <p>Una de las primeras plataformas en implementar paravirtualización, especialmente antes del soporte de virtualización por hardware.</p>
+    </div>
+  </div>
+
+  <h3>Comparativa: Ventajas y Desventajas</h3>
+  <div class="tabla-acceso">
+    <table>
+      <thead>
+        <tr>
+          <th>Ventajas</th>
+          <th>Desventajas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mejor rendimiento al evitar la emulación completa del hardware.</td>
+          <td>Requiere modificar el sistema operativo invitado.</td>
+        </tr>
+        <tr>
+          <td>Optimización directa de recursos a través del hipervisor.</td>
+          <td>Menor compatibilidad con sistemas propietarios o cerrados.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Aunque ha sido reemplazada en muchos casos por la virtualización asistida por hardware, la paravirtualización aún se utiliza en entornos donde se requiere alto rendimiento y se tiene control total sobre el sistema operativo huésped.
+  </p>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.2.4">
+        <h2>6.2.4 Contenedores</h2>
+   <p>
+    Los contenedores son una forma moderna de virtualización a nivel de sistema operativo. A diferencia de las máquinas virtuales tradicionales, no requieren un sistema operativo completo por instancia. En cambio, comparten el kernel del anfitrión, manteniendo sus propias bibliotecas, dependencias y entorno de ejecución.
+  </p>
+
+  <p><strong>Tecnologías más utilizadas:</strong></p>
+  <div class="nubes-contenedor">
+    <div class="nube">Docker</div>
+    <div class="nube">LXC</div>
+    <div class="nube">Podman</div>
+    <div class="nube">Kubernetes</div>
+  </div>
+
+  <h3>Características clave</h3>
+  <ul>
+    <li><strong>Ligereza:</strong> Ocupan mucho menos espacio y se inician rápidamente.</li>
+    <li><strong>Portabilidad:</strong> Se ejecutan en cualquier sistema con el mismo motor.</li>
+    <li><strong>Aislamiento:</strong> Uso de namespaces y cgroups para separar entornos.</li>
+  </ul>
+
+  <h3>Ventajas y limitaciones</h3>
+  <div class="tabla-acceso">
+    <table>
+      <thead>
+        <tr>
+          <th>Ventajas</th>
+          <th>Limitaciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Perfectos para desarrollo, pruebas y despliegue ágil.</td>
+          <td>Menor aislamiento que una máquina virtual completa.</td>
+        </tr>
+        <tr>
+          <td>Escalabilidad sencilla con herramientas como Kubernetes.</td>
+          <td>No pueden ejecutar un sistema operativo diferente al host.</td>
+        </tr>
+        <tr>
+          <td>Ideales para arquitecturas de microservicios.</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    En resumen, los contenedores representan una evolución natural de la virtualización y se han convertido en un pilar del desarrollo moderno en entornos DevOps y la computación en la nube.
+  </p>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+  </main>
+
+  <footer class="footer-oscuro" id="footer">
+    <div class="footer-contenido">
+      <div class="footer-contacto">
+        <p><strong>Escuela Superior de Cómputo</strong> - Sistemas Operativos - Unidad 6</p>
+      </div>
+      <hr>
+      <div class="footer-institucional">
+        <p>&copy; 2025 Instituto Politécnico Nacional</p>
+        <p>Av. Luis Enrique Erro S/N, Zacatenco, CDMX</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Ir arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

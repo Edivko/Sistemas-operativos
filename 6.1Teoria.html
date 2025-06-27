@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6.1 TEORIA - ESCOM</title>
+<link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="pagina-teoria">
+
+  <!--<div class="barra-gob"></div>-->
+    <div class="contenedor-logos">
+        <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn">
+        <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom">
+        <div class="enlaces-rapidos">
+            <a href="#">Directorio</a> |
+            <a href="#">Correo</a> |
+            <a href="https://www.ipn.mx/assets/files/website/docs/inicio/calendarioipn-escolarizada.pdf">Calendario</a> |
+            <a href="#">Protección de Datos</a>
+        </div>
+    </div>
+
+  <header>
+        <h1>ESCOM</h1>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="nav-menu">
+              <a href="index.html">Inicio</a>
+              <a href="6.1Home.html">Regresa 6.1</a>
+            <div class="dropdown">
+                <a href="#up-next" class="dropdown-toggle">Contenido ▾</a>
+                <div class="dropdown-menu">
+                    <a href="#6.1">6.1 El ambiente de seguridad.</a>       
+                    <a href="#6.1.1">6.1.1 Seguridad en los sistemas operativos.</a>
+                    <a href="#6.1.2">6.1.2 Control de acceso a los recursos.</a>
+                    <a href="#6.1.3">6.1.3 Implementacion de matrices de acceso.</a>
+                    <a href="#6.1.4">6.1.4 Modelos formales de seguridad.</a> <!-- Espacio personalizado -->
+                </div>
+            </div>
+            <a href="HReferencias.html">Referencias</a>
+            <a href="#glosario">Glosario</a>
+            <a href="#footer">Mapa del sitio</a>
+        </nav>
+    </header>
+
+  <main>
+       <!-- BLOQUE INFORMATIVO-->
+<section class="bloque-informativo" id="6.1">
+  <h2>6.1 El ambiente de seguridad.</h2>
+  <p>
+    El ambiente de seguridad en sistemas informáticos se refiere al conjunto de políticas, procedimientos, herramientas y tecnologías diseñadas para proteger los activos digitales de una organización. Estos activos incluyen datos, redes, sistemas operativos, hardware y usuarios. La seguridad informática busca preservar la confidencialidad, integridad y disponibilidad de la información, así como asegurar que los usuarios y sistemas funcionen de acuerdo con los permisos y roles definidos.
+  </p>
+  <p>
+    Un ambiente seguro contempla tanto medidas técnicas como organizacionales. Las medidas técnicas incluyen firewalls, antivirus, sistemas de detección de intrusos y encriptación de datos. Las organizacionales abarcan políticas de contraseñas, capacitaciones, auditorías y planes de contingencia.
+  </p>
+  <p>
+    La implementación de un ambiente de seguridad adecuado es fundamental en la era digital, ya que las amenazas como el malware, ransomware, ataques de denegación de servicio (DDoS), y la ingeniería social son cada vez más sofisticadas y frecuentes.
+  </p>
+  <p>
+    La seguridad no es un estado permanente, sino un proceso continuo que requiere vigilancia constante, actualizaciones, revisiones y ajustes conforme evolucionan las amenazas tecnológicas.
+  </p>
+</section>
+
+       <!-- INICIO BLOQUE PARA IAMGENES-->
+        <div class="imagen-info">
+            <img src="img/img61.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (https://citei.com.mx/noticias/titulo-de-noticia/).</p>
+        </div> 
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.1.1">
+        <h2>6.1.1 Seguridad en los sistemas operativos.</h2>
+  <p>
+    Los sistemas operativos son una de las piezas fundamentales de seguridad en un sistema informático. Su papel es administrar el hardware y permitir la interacción del usuario con el sistema, pero también garantizar que las operaciones se realicen de manera segura.
+  </p>
+  <p>
+    Los sistemas operativos modernos implementan diversas funciones de seguridad, tales como:
+  </p>
+  <p></p>
+  <ul>
+    <li><strong>Control de acceso:</strong> Determina quién puede acceder a qué recursos y bajo qué condiciones.</li>
+    <li><strong>Aislamiento de procesos:</strong> Previene que un proceso interfiera o acceda a la información de otro sin autorización.</li>
+    <li><strong>Administración de cuentas de usuario:</strong> Permite crear y gestionar perfiles con distintos niveles de privilegios.</li>
+    <li><strong>Actualizaciones de seguridad:</strong> Corrigen vulnerabilidades descubiertas en el sistema operativo.</li>
+  </ul>
+  <p>
+    Sistemas operativos como <strong>Windows</strong>, <strong>Linux</strong> y <strong>macOS</strong> han evolucionado para incluir mecanismos de seguridad más robustos como <em>SELinux</em> (Linux), <em>BitLocker</em> (Windows), y <em>Gatekeeper</em> (macOS), entre otros.
+    La seguridad del sistema operativo también depende del comportamiento del usuario, ya que acciones como descargar software no confiable o no aplicar actualizaciones pueden comprometer la integridad del sistema.
+  </p>
+    </section> 
+
+        <!-- FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.1.2">
+        <h2>6.1.2 Control de acceso a los recursos.</h2>
+  <p>
+    El control de acceso a los recursos es uno de los mecanismos más esenciales en el ámbito de la seguridad informática. Este proceso se encarga de garantizar que únicamente los usuarios autorizados puedan interactuar con determinados recursos del sistema, ya sean archivos, dispositivos, bases de datos o servicios. Su implementación es vital para prevenir accesos no deseados, modificaciones indebidas o la filtración de información confidencial.
+  </p>
+  <p>
+    En esencia, el control de acceso regula "quién puede hacer qué" dentro de un sistema informático. Para ello, utiliza políticas de seguridad y mecanismos técnicos que permiten asignar permisos específicos a usuarios individuales o a grupos. Este control puede aplicarse de manera manual (configuración directa de permisos) o automática (mediante sistemas y políticas centralizadas).
+  </p>
+  <p>
+    Existen diversos modelos de control de acceso, cada uno con sus propias características y niveles de flexibilidad:
+  </p>
+  <ul></ul>
+  <div class="contenedor-referencias">
+    <div class="referencia-tarjeta">
+      <strong>Control de Acceso Discrecional (DAC):</strong><br>
+      El propietario del recurso decide quién puede acceder y qué acciones puede realizar. Común en sistemas como Unix y Windows (lectura, escritura, ejecución).
+    </div>
+    <div class="referencia-tarjeta">
+      <strong>Control de Acceso Obligatorio (MAC):</strong><br>
+      El acceso está regulado por políticas centrales que no pueden ser modificadas por los usuarios. Usado en entornos gubernamentales con niveles de seguridad.
+    </div>
+    <div class="referencia-tarjeta">
+      <strong>Control de Acceso Basado en Roles (RBAC):</strong><br>
+      Los permisos se asignan a roles (ej. administrador, invitado). Facilita la gestión coherente de privilegios en grandes organizaciones.
+    </div>
+  </div>
+<ul></ul>
+  <p>
+    Además de estos modelos, existen mecanismos tecnológicos que refuerzan el control de acceso, como los sistemas de autenticación (contraseñas, biometría, tokens), firewalls, sistemas de detección de intrusos (IDS) y registros de auditoría. Todos estos elementos trabajan en conjunto para crear un entorno seguro, donde los recursos del sistema están protegidos de manera efectiva.
+  </p>
+    </section> 
+
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.1.3">
+        <h2>6.1.3 Implementacion de matrices de acceso.</h2>
+ <p>
+    La matriz de acceso es una herramienta teórica y práctica empleada para representar de forma clara los derechos de acceso que los diferentes usuarios o procesos tienen sobre los recursos del sistema. Se trata de un modelo que permite organizar y visualizar los permisos de manera estructurada, facilitando la implementación de controles más precisos y efectivos.
+  </p>
+
+  <p>
+    Esta matriz se compone de filas, que representan a los sujetos (usuarios, grupos o procesos del sistema), y columnas, que representan a los objetos (archivos, impresoras, bases de datos, etc.). En cada intersección (celda), se especifica el conjunto de operaciones que el sujeto tiene permitidas sobre ese objeto: lectura, escritura, ejecución, borrado, entre otras.
+  </p>
+
+
+  <p>
+    Aunque es un modelo muy útil, en sistemas con muchos usuarios y recursos, esta matriz puede volverse extremadamente grande e ineficiente. Por esta razón, los sistemas modernos suelen implementar formas derivadas de esta matriz:
+  </p>
+<ul></ul>
+  <div class="contenedor-referencias">
+    <div class="referencia-tarjeta">
+      <strong>Listas de Control de Acceso (ACLs):</strong><br>
+      Se asocian a cada objeto del sistema, y contienen una lista de los sujetos con sus respectivos permisos. Es una forma eficiente de representar las columnas de la matriz.
+    </div>
+    <div class="referencia-tarjeta">
+      <strong>Listas de Capacidades:</strong><br>
+      Se asocian a los sujetos del sistema y contienen las capacidades o privilegios que tienen sobre diversos objetos. Representan las filas de la matriz.
+    </div>
+    <div class="referencia-tarjeta">
+      <strong>Bitmaps de acceso:</strong><br>
+      Representan los permisos mediante matrices binarias que facilitan el procesamiento automático.
+    </div>
+  </div>
+<ul></ul>
+  <p>
+    Implementar correctamente matrices de acceso ayuda no solo a mejorar la seguridad, sino también a evitar errores administrativos, reducir el riesgo de privilegios excesivos y facilitar la auditoría del sistema.
+  </p>
+  <div class="tabla-acceso">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th><strong>ArchivoA</strong></th>
+        <th><strong>ArchivoB</strong></th>
+        <th><strong>Impresora</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Usuario1</strong></td>
+        <td>Leer</td>
+        <td>Ninguno</td>
+        <td>Imprimir</td>
+      </tr>
+      <tr>
+        <td><strong>Usuario2</strong></td>
+        <td>Leer/Escribir</td>
+        <td>Leer</td>
+        <td>Ninguno</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="imagen-descripcion">Figura 1. Ejemplo de matriz de acceso entre usuarios y recursos.</p>
+</div>
+
+    </section> 
+
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+       <!-- BLOQUE INFORMATIVO-->
+    <section class="bloque-informativo" id="6.1.4">
+        <h2>6.1.4 Modelos formales de seguridad.</h2>
+  <p>
+    Los modelos formales de seguridad son estructuras teóricas basadas en lógica matemática que permiten analizar, definir y validar las políticas de protección en sistemas computacionales. Se aplican en entornos donde la información debe mantenerse bajo estrictos niveles de control, como en sectores gubernamentales, militares y financieros.
+  </p>
+
+  <p>
+    Estos modelos ayudan a construir sistemas desde sus fundamentos con criterios rigurosos de seguridad, asegurando que el comportamiento del sistema se mantenga dentro de los límites definidos incluso ante acciones maliciosas o errores de configuración.
+  </p>
+
+  <div class="contenedor-referencias">
+    <div class="referencia-tarjeta">
+      <strong>Bell-LaPadula (BLP)</strong><br>
+      Enfocado en la <strong>confidencialidad</strong>, este modelo fue diseñado para restringir el acceso a información clasificada. Establece que un usuario no puede:
+      <ul>
+        <li><strong>No read up (NRU):</strong> Leer datos de un nivel superior.</li>
+        <li><strong>No write down (NWD):</strong> Escribir datos hacia un nivel inferior.</li>
+      </ul>
+      Comúnmente implementado en entornos militares.
+    </div>
+
+    <div class="referencia-tarjeta">
+      <strong>Biba</strong><br>
+      A diferencia de Bell-LaPadula, el modelo Biba se centra en la <strong>integridad</strong> de la información. Define reglas opuestas:
+      <ul>
+        <li><strong>No read down (NRD):</strong> No se puede leer datos de menor integridad.</li>
+        <li><strong>No write up (NWU):</strong> No se puede escribir a niveles superiores.</li>
+      </ul>
+      Su objetivo es evitar la contaminación de datos confiables.
+    </div>
+
+    <div class="referencia-tarjeta">
+      <strong>Clark-Wilson</strong><br>
+      Este modelo práctico y orientado al ámbito empresarial enfatiza la <strong>integridad y trazabilidad</strong>. Establece:
+      <ul>
+        <li>Separación de funciones.</li>
+        <li>Transacciones bien definidas.</li>
+        <li>Autorización de usuarios verificada.</li>
+      </ul>
+      Muy útil en sistemas financieros y de bases de datos.
+    </div>
+  </div>
+<ul></ul>
+  <p>
+    La ventaja del uso de modelos formales es que permiten validar mediante pruebas lógicas que los mecanismos de seguridad funcionen correctamente desde el diseño del sistema operativo. Esto reduce errores, establece límites claros de comportamiento y fortalece la protección de los recursos ante amenazas complejas.
+  </p>
+    </section> 
+       <!-- INICIO BLOQUE PARA IAMGENES
+        <div class="imagen-info">
+            <img src="img/imgPrueba.jpg" alt="nombreImagen">
+            <p class="imagen-descripcion">Figura 1. (Aqui va la descripcion).</p>
+        </div> 
+           FIN BLOIQUE IMAGENES-->
+    <!-- FIN DE BLOQUE INFORMATIVO = IMAGEN-->
+
+  </main>
+
+  <footer class="footer-oscuro" id="footer">
+    <div class="footer-contenido">
+      <div class="footer-contacto">
+        <p><strong>Escuela Superior de Cómputo</strong> - Sistemas Operativos - Unidad 6</p>
+      </div>
+      <hr>
+      <div class="footer-institucional">
+        <p>&copy; 2025 Instituto Politécnico Nacional</p>
+        <p>Av. Luis Enrique Erro S/N, Zacatenco, CDMX</p>
+      </div>
+    </div>
+  </footer>
+  <button id="scrollTopBtn" title="Ir arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
