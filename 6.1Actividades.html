@@ -1,319 +1,722 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>6.1 ACTIVIDADES - ESCOM</title>
-<link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="pagina-teoria">
-
-  <!--<div class="barra-gob"></div>-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6.1 ACTIVIDADES - ESCOM</title>
+    <link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="pagina-teoria">
+    <!-- CONTENEDOR PARA LOGOS INSTITUCIONALES-->
     <div class="contenedor-logos">
-        <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn">
-        <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom">
-        <div class="enlaces-rapidos">
-            <a href="#">Directorio</a> |
-            <a href="#">Correo</a> |
-            <a href="https://www.ipn.mx/assets/files/website/docs/inicio/calendarioipn-escolarizada.pdf">Calendario</a> |
-            <a href="#">Protección de Datos</a>
-        </div>
+      <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn" />
+      <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom" />
+      <div class="enlaces-rapidos">
+        <a href="#">Directorio</a> | <a href="#">Correo</a> |
+        <a
+          href="https://www.ipn.mx/assets/files/website/docs/inicio/calendarioipn-escolarizada.pdf"
+          >Calendario</a
+        >
+        |
+        <a href="#">Protección de Datos</a>
+      </div>
     </div>
-
-  <header>
-        <h1>ESCOM</h1>
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-        <nav id="nav-menu">
-            <a href="index.html">Inicio</a>
-            <a href="6.1Home.html">Regresa 6.1</a>         
-            <a href="HReferencias.html">Referencias</a>
-            <a href="#glosario">Glosario</a>
-            <a href="#footer">Mapa del sitio</a>
-        </nav>
+    <!--MENU PRINCIPAL-->
+    <header>
+      <h1>ESCOM</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="HReferencias.html">Referencias</a>
+        <a href="Hglosario.html">Glosario</a>
+        <a href="mapaSitio.html">Mapa del sitio</a>
+      </nav>
     </header>
 
-  <main>
-<!-- ACTIVIDADES EN LISTA-->
-<section class="actividades-acordeon">
-  <h2 class="titulo-ilustracion"> Actividades de la Unidad 6.1</h2>
+    <main>
+      <!--INICIO DEL MAIN: CONTIENE UN MENU DEPLEGABLE CON LAS ACTVIDADES PARA SU BUSQUEDA RAPIDA-->
+      <!-- ACTIVIDADES EN LISTA-->
+      <section class="actividades-acordeon">
+        <h2 class="titulo-ilustracion">Actividades de la Unidad 6.1</h2>
 
-  <div class="acordeon-item">
-    <button class="acordeon-btn">6.1 El ambiente de seguridad <span class="flecha">▶</span></button>
-    <div class="acordeon-panel">
-  <p>Explora los elementos clave que conforman un entorno seguro en sistemas informáticos, tanto a nivel técnico como organizacional. Reconoce las amenazas actuales y el carácter dinámico de la seguridad informática.</p>
+        <div class="acordeon-item">
+          <button class="acordeon-btn">
+            6.1 El ambiente de seguridad <span class="flecha">▶</span>
+          </button>
+          <div class="acordeon-panel">
+            <p>
+              Explora los elementos clave que conforman un entorno seguro en
+              sistemas informáticos, tanto a nivel técnico como organizacional.
+              Reconoce las amenazas actuales y el carácter dinámico de la
+              seguridad informática.
+            </p>
 
-<form class="cuestionario" id="cuestionarioUnidad61">
-  <!-- Pregunta 1 -->
-  <p><strong>1. ¿Qué objetivo principal persigue la seguridad informática?</strong></p>
-  <label><input type="radio" name="q1_u61" value="incorrecta">A) Instalar más software en los equipos</label><br>
-  <label><input type="radio" name="q1_u61" value="correcta">B) Preservar la confidencialidad, integridad y disponibilidad de la información</label><br>
-  <label><input type="radio" name="q1_u61" value="incorrecta">C) Evitar que los usuarios usen contraseñas</label><br>
-  <div id="feedback-q1_u61" class="feedback"></div>
+            <form class="cuestionario" id="cuestionarioUnidad61">
+              <!-- Pregunta 1 -->
+              <p>
+                <strong
+                  >1. ¿Qué objetivo principal persigue la seguridad
+                  informática?</strong
+                >
+              </p>
+              <label
+                ><input type="radio" name="q1_u61" value="incorrecta" />A)
+                Instalar más software en los equipos</label
+              ><br />
+              <label
+                ><input type="radio" name="q1_u61" value="correcta" />B)
+                Preservar la confidencialidad, integridad y disponibilidad de la
+                información</label
+              ><br />
+              <label
+                ><input type="radio" name="q1_u61" value="incorrecta" />C)
+                Evitar que los usuarios usen contraseñas</label
+              ><br />
+              <div id="feedback-q1_u61" class="feedback"></div>
 
-<hr>
+              <hr />
 
-<button type="button" onclick="validarRespuesta('q1_u61', 'correcta')" class="boton-validar">Validar pregunta 1</button>
-  <!-- Pregunta 2 -->
-  <p><strong>2. ¿Cuál de las siguientes opciones describe mejor las medidas organizacionales en un ambiente de seguridad?</strong></p>
-  <label><input type="radio" name="q2_u61" value="correcta">A) Políticas de contraseñas, capacitaciones y auditorías</label><br>
-  <label><input type="radio" name="q2_u61" value="incorrecta">B) Antivirus, cortafuegos y cifrado de datos</label><br>
-  <label><input type="radio" name="q2_u61" value="incorrecta">C) Instalación de hardware especializado</label><br>
-  <div id="feedback-q2_u61" class="feedback"></div>
-<hr>
+              <button
+                type="button"
+                onclick="validarRespuesta('q1_u61', 'correcta')"
+                class="boton-validar"
+              >
+                Validar pregunta 1
+              </button>
+              <!-- Pregunta 2 -->
+              <p>
+                <strong
+                  >2. ¿Cuál de las siguientes opciones describe mejor las
+                  medidas organizacionales en un ambiente de seguridad?</strong
+                >
+              </p>
+              <label
+                ><input type="radio" name="q2_u61" value="correcta" />A)
+                Políticas de contraseñas, capacitaciones y auditorías</label
+              ><br />
+              <label
+                ><input type="radio" name="q2_u61" value="incorrecta" />B)
+                Antivirus, cortafuegos y cifrado de datos</label
+              ><br />
+              <label
+                ><input type="radio" name="q2_u61" value="incorrecta" />C)
+                Instalación de hardware especializado</label
+              ><br />
+              <div id="feedback-q2_u61" class="feedback"></div>
+              <hr />
 
+              <button
+                type="button"
+                onclick="validarRespuesta('q2_u61', 'correcta')"
+                class="boton-validar"
+              >
+                Validar pregunta 2
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- UNIDA 6.1.1-->
+        <div class="acordeon-item">
+          <button class="acordeon-btn">
+            6.1.1 Seguridad en los sistemas operativos
+            <span class="flecha">▶</span>
+          </button>
+          <div class="acordeon-panel">
+            <p>
+              Analiza las medidas de seguridad que implementan los sistemas
+              operativos modernos, como el aislamiento de procesos, control de
+              acceso y uso de herramientas especializadas según el sistema.
+            </p>
 
-<button type="button" onclick="validarRespuesta('q2_u61', 'correcta')" class="boton-validar">Validar pregunta 2</button>
+            <form class="cuestionario" id="cuestionario_u611">
+              <p>
+                <strong
+                  >1. ¿Cuál de las siguientes NO es una función de seguridad
+                  implementada comúnmente por los sistemas operativos
+                  modernos?</strong
+                >
+              </p>
+              <label
+                ><input type="radio" name="q1_u611" value="a" /> A) Control de
+                acceso</label
+              ><br />
+              <label
+                ><input type="radio" name="q1_u611" value="b" /> B) Aislamiento
+                de procesos</label
+              ><br />
+              <label
+                ><input type="radio" name="q1_u611" value="c" /> C)
+                Defragmentación automática</label
+              ><br />
+              <label
+                ><input type="radio" name="q1_u611" value="d" /> D)
+                Actualizaciones de seguridad</label
+              ><br />
+              <div id="feedback-q1_u611" class="feedback"></div>
+              <button
+                type="button"
+                class="boton-validar"
+                onclick="validarRespuesta('q1_u611', 'c')"
+              >
+                Validar pregunta 1
+              </button>
 
-</form>
-  
-    </div>
-  </div>
+              <hr />
 
-<div class="acordeon-item">
-  <button class="acordeon-btn">6.1.1 Seguridad en los sistemas operativos <span class="flecha">▶</span></button>
-  <div class="acordeon-panel">
-    <p>Analiza las medidas de seguridad que implementan los sistemas operativos modernos, como el aislamiento de procesos, control de acceso y uso de herramientas especializadas según el sistema.</p>
+              <p>
+                <strong
+                  >2. ¿Qué mecanismo de seguridad evita que un proceso
+                  interfiera con otro sin autorización?</strong
+                >
+              </p>
+              <label
+                ><input type="radio" name="q2_u611" value="a" /> A)
+                BitLocker</label
+              ><br />
+              <label
+                ><input type="radio" name="q2_u611" value="b" /> B)
+                Administración de cuentas</label
+              ><br />
+              <label
+                ><input type="radio" name="q2_u611" value="c" /> C) Aislamiento
+                de procesos</label
+              ><br />
+              <label
+                ><input type="radio" name="q2_u611" value="d" /> D) Control de
+                acceso</label
+              ><br />
+              <div id="feedback-q2_u611" class="feedback"></div>
+              <button
+                type="button"
+                class="boton-validar"
+                onclick="validarRespuesta('q2_u611', 'c')"
+              >
+                Validar pregunta 2
+              </button>
 
-    <form class="cuestionario" id="cuestionario_u611">
+              <hr />
 
-      <p><strong>1. ¿Cuál de las siguientes NO es una función de seguridad implementada comúnmente por los sistemas operativos modernos?</strong></p>
-      <label><input type="radio" name="q1_u611" value="a"> A) Control de acceso</label><br>
-      <label><input type="radio" name="q1_u611" value="b"> B) Aislamiento de procesos</label><br>
-      <label><input type="radio" name="q1_u611" value="c"> C) Defragmentación automática</label><br>
-      <label><input type="radio" name="q1_u611" value="d"> D) Actualizaciones de seguridad</label><br>
-      <div id="feedback-q1_u611" class="feedback"></div>
-      <button type="button" class="boton-validar" onclick="validarRespuesta('q1_u611', 'c')">Validar pregunta 1</button>
+              <p>
+                <strong
+                  >3. ¿Qué herramienta pertenece al sistema operativo macOS para
+                  garantizar seguridad?</strong
+                >
+              </p>
+              <label
+                ><input type="radio" name="q3_u611" value="a" /> A)
+                SELinux</label
+              ><br />
+              <label
+                ><input type="radio" name="q3_u611" value="b" /> B)
+                Gatekeeper</label
+              ><br />
+              <label
+                ><input type="radio" name="q3_u611" value="c" /> C)
+                BitLocker</label
+              ><br />
+              <label
+                ><input type="radio" name="q3_u611" value="d" /> D)
+                AppArmor</label
+              ><br />
+              <div id="feedback-q3_u611" class="feedback"></div>
+              <button
+                type="button"
+                class="boton-validar"
+                onclick="validarRespuesta('q3_u611', 'b')"
+              >
+                Validar pregunta 3
+              </button>
+              <hr />
+              <p>Ejemplo 1 – Bash: Control de acceso básico</p>
+            </form>
 
-      <hr>
+            <div style="display: flex; gap: 30px; flex-wrap: wrap">
+              <!-- Caja para completar comandos -->
+              <div class="codigo-completar">
+                <ul></ul>
+                <p>Esto demuestra cómo el SO restringe acceso según permisos</p>
+                <p><strong># Crear usuarios</strong></p>
+                <code
+                  >sudo
+                  <input
+                    type="text"
+                    class="input-codigo"
+                    id="cmd1"
+                    placeholder="comando"
+                  />
+                  usuario1</code
+                ><br />
+                <code
+                  >sudo
+                  <input
+                    type="text"
+                    class="input-codigo"
+                    id="cmd2"
+                    placeholder="comando"
+                  />
+                  usuario2</code
+                ><br /><br />
 
-      <p><strong>2. ¿Qué mecanismo de seguridad evita que un proceso interfiera con otro sin autorización?</strong></p>
-      <label><input type="radio" name="q2_u611" value="a"> A) BitLocker</label><br>
-      <label><input type="radio" name="q2_u611" value="b"> B) Administración de cuentas</label><br>
-      <label><input type="radio" name="q2_u611" value="c"> C) Aislamiento de procesos</label><br>
-      <label><input type="radio" name="q2_u611" value="d"> D) Control de acceso</label><br>
-      <div id="feedback-q2_u611" class="feedback"></div>
-      <button type="button" class="boton-validar" onclick="validarRespuesta('q2_u611', 'c')">Validar pregunta 2</button>
+                <p>
+                  <strong
+                    ># Crear archivo y asignar permisos solo a usuario1</strong
+                  >
+                </p>
+                <code
+                  ><input
+                    type="text"
+                    class="input-codigo"
+                    id="cmd3"
+                    placeholder="comando"
+                  />
+                  archivo.txt</code
+                ><br />
+                <code
+                  >sudo
+                  <input
+                    type="text"
+                    class="input-codigo"
+                    id="cmd4"
+                    placeholder="comando"
+                  />
+                  usuario1 archivo.txt</code
+                ><br />
+                <code
+                  ><input
+                    type="text"
+                    class="input-codigo"
+                    id="cmd5"
+                    placeholder="comando"
+                  />
+                  600 archivo.txt</code
+                ><br /><br />
 
-      <hr>
+                <button onclick="validarComandos()">Validar comandos</button>
+                <div
+                  id="feedback-cmds"
+                  class="feedback"
+                  style="margin-top: 10px"
+                ></div>
+              </div>
 
-      <p><strong>3. ¿Qué herramienta pertenece al sistema operativo macOS para garantizar seguridad?</strong></p>
-      <label><input type="radio" name="q3_u611" value="a"> A) SELinux</label><br>
-      <label><input type="radio" name="q3_u611" value="b"> B) Gatekeeper</label><br>
-      <label><input type="radio" name="q3_u611" value="c"> C) BitLocker</label><br>
-      <label><input type="radio" name="q3_u611" value="d"> D) AppArmor</label><br>
-      <div id="feedback-q3_u611" class="feedback"></div>
-      <button type="button" class="boton-validar" onclick="validarRespuesta('q3_u611', 'b')">Validar pregunta 3</button>
-        <hr>
-    <p>Ejemplo 1 – Bash: Control de acceso básico</p>
-    
-    </form>
-    
-<div style="display: flex; gap: 30px; flex-wrap: wrap;">
+              <!-- Caja de comandos sugeridos -->
+              <div class="referencia-comandos">
+                <p><strong>Comandos disponibles:</strong></p>
+                <ul>
+                  <li><code>adduser</code></li>
+                  <li><code>touch</code></li>
+                  <li><code>chown</code></li>
+                  <li><code>chmod</code></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- UNIDAD 6.1.2 -->
+        <div class="acordeon-item">
+          <button class="acordeon-btn">
+            6.1.2 Actividad - Control de acceso a los recurso
+            <span class="flecha">▶</span>
+          </button>
+          <div class="acordeon-panel">
+            <!-- Pregunta de opción múltiple -->
+            <p>
+              <strong
+                >1. ¿Cuál es el principal objetivo del control de acceso a los
+                recursos en un sistema informático?</strong
+              >
+            </p>
+            <label
+              ><input type="radio" name="q1_u612" value="a" /> A) Aumentar la
+              velocidad de ejecución de los procesos del sistema.</label
+            ><br />
+            <label
+              ><input type="radio" name="q1_u612" value="b" /> B) Asegurar que
+              solo los usuarios autorizados accedan a recursos específicos del
+              sistema.</label
+            ><br />
+            <label
+              ><input type="radio" name="q1_u612" value="c" /> C) Optimizar el
+              almacenamiento de datos mediante compresión automática.</label
+            ><br />
+            <label
+              ><input type="radio" name="q1_u612" value="d" /> D) Monitorear el
+              uso de software con fines de auditoría y facturación</label
+            ><br />
+            <p id="feedback-q1_u612"></p>
+            <button type="button" onclick="validarRespuesta('q1_u612', 'b')">
+              Validar pregunta 1
+            </button>
+            <div
+              id="feedback-cmds"
+              class="feedback"
+              style="margin-top: 10px"
+            ></div>
+            <hr />
+            <!-- Título y pregunta -->
+            <p>
+              <strong
+                >2. Relaciona correctamente cada modelo de control de acceso con
+                su descripción:</strong
+              >
+            </p>
 
-  <!-- Caja para completar comandos -->
-  <div class="codigo-completar">
-    <ul></ul>
-    <p> Esto demuestra cómo el SO restringe acceso según permisos</p>
-    <p><strong># Crear usuarios</strong></p>
-    <code>sudo <input type="text" class="input-codigo" id="cmd1" placeholder="comando"> usuario1</code><br>
-    <code>sudo <input type="text" class="input-codigo" id="cmd2" placeholder="comando"> usuario2</code><br><br>
+            <!-- Contenedor de emparejamiento -->
+            <div class="emparejamiento">
+              <ul>
+                <li>
+                  <strong>a)</strong> Este modelo da al propietario de un
+                  recurso la capacidad de decidir qué usuarios pueden acceder y
+                  qué acciones pueden realizar.
+                </li>
+                <li>
+                  <strong>b)</strong> Los permisos se asignan a roles dentro de
+                  la organización, no directamente a los usuarios.
+                </li>
+                <li>
+                  <strong>c)</strong> Las decisiones de acceso se rigen por
+                  políticas de seguridad que no pueden ser modificadas por los
+                  usuarios.
+                </li>
+              </ul>
+              <p>
+                1. Control de Acceso Discrecional (DAC):
+                <input type="text" id="emp1" placeholder="a, b o c" />
+              </p>
+              <p>
+                2. Control de Acceso Obligatorio (MAC):
+                <input type="text" id="emp2" placeholder="a, b o c" />
+              </p>
+              <p>
+                3. Control de Acceso Basado en Roles (RBAC):
+                <input type="text" id="emp3" placeholder="a, b o c" />
+              </p>
+              <div id="feedback-emparejamiento" style="margin-top: 10px"></div>
+              <!-- Botón y espacio para retroalimentación -->
+              <button type="button" onclick="validarEmparejamiento()">
+                Validar emparejamiento
+              </button>
+              <div id="feedback-emparejamiento" style="margin-top: 10px"></div>
+            </div>
+          </div>
+        </div>
+        <!-- UNIDAD 6.1.3 -->
+        <div class="acordeon-item">
+          <button class="acordeon-btn">
+            6.1.3 Actividad - Implementación de matrices de acceso
+            <span class="flecha">▶</span>
+          </button>
+          <div class="acordeon-panel">
+            <!-- Pregunta de opción múltiple -->
+            <p>
+              <strong
+                >1. ¿Cuál de las siguientes afirmaciones sobre la matriz de
+                acceso es correcta?</strong
+              >
+            </p>
+            <form id="form-matriz">
+              <label
+                ><input type="radio" name="opcionMatriz" value="a" /> A)
+                Representa usuarios como columnas y recursos como filas</label
+              ><br />
+              <label
+                ><input type="radio" name="opcionMatriz" value="b" /> B) Solo
+                puede aplicarse en sistemas militares</label
+              ><br />
+              <label
+                ><input type="radio" name="opcionMatriz" value="c" /> C) Es una
+                herramienta para visualizar permisos entre sujetos y
+                objetos</label
+              ><br />
+              <label
+                ><input type="radio" name="opcionMatriz" value="d" /> D)
+                Reemplaza completamente el uso de ACLs y capacidades</label
+              ><br />
+              <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+              <button type="button" onclick="validarPreguntaMatriz()">
+                Validar pregunta 1
+              </button>
+              <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+            </form>
+            <div
+              style="
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 15px;
+                background-color: #f5faff;
+                border-left: 6px solid #0077b6;
+                border-radius: 6px;
+                font-family: 'Segoe UI', sans-serif;
+              "
+            >
+              <h4 style="margin-top: 0; color: #003f5c">
+                Significado de los permisos:
+              </h4>
+              <ul style="padding-left: 20px; margin: 10px 0">
+                <li>
+                  <strong>R</strong>: Lectura (el usuario puede ver o abrir el
+                  recurso).
+                </li>
+                <li>
+                  <strong>W</strong>: Escritura (el usuario puede modificar o
+                  guardar cambios en el recurso).
+                </li>
+                <li>
+                  <strong>X</strong>: Ejecución (el usuario puede ejecutar el
+                  archivo o programa).
+                </li>
+                <li><strong>RW</strong>: Lectura y escritura.</li>
+                <li><strong>RWX</strong>: Lectura, escritura y ejecución.</li>
+                <li>
+                  <strong>-</strong>: Sin permisos (el usuario no tiene acceso
+                  al recurso).
+                </li>
+              </ul>
+            </div>
 
-    <p><strong># Crear archivo y asignar permisos solo a usuario1</strong></p>
-    <code><input type="text" class="input-codigo" id="cmd3" placeholder="comando"> archivo.txt</code><br>
-    <code>sudo <input type="text" class="input-codigo" id="cmd4" placeholder="comando"> usuario1 archivo.txt</code><br>
-    <code><input type="text" class="input-codigo" id="cmd5" placeholder="comando"> 600 archivo.txt</code><br><br>
+            <!-- Tabla para completar -->
+            <p>
+              <strong
+                >2. Completa la siguiente matriz de acceso con los permisos
+                correspondientes:</strong
+              >
+            </p>
+            <div class="tabla-acceso">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Recurso / Usuario</th>
+                    <th>Usuario A</th>
+                    <th>Usuario B</th>
+                    <th>Usuario C</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Archivo1.txt</td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat1"
+                        maxlength="3"
+                        size="3"
+                        placeholder="RW"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat2"
+                        maxlength="3"
+                        size="3"
+                        placeholder="-"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat3"
+                        maxlength="3"
+                        size="3"
+                        placeholder="R"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>BaseDatos.db</td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat4"
+                        maxlength="3"
+                        size="3"
+                        placeholder="-"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat5"
+                        maxlength="3"
+                        size="3"
+                        placeholder="RW"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat6"
+                        maxlength="3"
+                        size="3"
+                        placeholder="RX"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Aplicación.exe</td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat7"
+                        maxlength="3"
+                        size="3"
+                        placeholder="X"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat8"
+                        maxlength="3"
+                        size="3"
+                        placeholder="RWX"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="mat9"
+                        maxlength="3"
+                        size="3"
+                        placeholder="-"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="imagen-descripcion">
+                Figura 1. Ejemplo de matriz de acceso. Completa los permisos
+                asignados a cada usuario para cada recurso.
+              </p>
+            </div>
+            <button type="button" onclick="validarMatrizAcceso()">
+              Validar matriz
+            </button>
+            <div id="feedback-matriz" style="margin-top: 10px"></div>
+          </div>
+        </div>
+        <!--UNIDAD 6.1.4-->
+        <div class="acordeon-item">
+          <button class="acordeon-btn">
+            6.1.4 Actividad - Modelos formales de seguridad
+            <span class="flecha">▶</span>
+          </button>
+          <div class="acordeon-panel">
+            <!-- Pregunta 1 -->
+            <p>
+              <strong
+                >1. ¿Cuál es el principal objetivo del modelo
+                Bell-LaPadula?</strong
+              >
+            </p>
+            <label
+              ><input type="radio" name="modelo1" value="a" /> A) Proteger la
+              integridad de los datos en sistemas financieros</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo1" value="b" /> B) Garantizar la
+              trazabilidad de las operaciones mediante transacciones</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo1" value="c" /> C) Proteger la
+              confidencialidad de la información en sistemas clasificados</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo1" value="d" /> D) Controlar el
+              acceso a redes inalámbricas con cifrado dinámico</label
+            >
+            <div id="feedback-modelo1" style="margin-top: 5px"></div>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+            <button type="button" onclick="validarRespuesta('modelo1', 'c')">
+              Validar
+            </button>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+            <!-- Pregunta 2 -->
+            <p>
+              <strong
+                >2. ¿Qué regla corresponde al modelo Biba para proteger la
+                integridad de los datos?</strong
+              >
+            </p>
+            <label
+              ><input type="radio" name="modelo2" value="a" /> A) No read up
+              (NRU)</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo2" value="b" /> B) No write down
+              (NWD)</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo2" value="c" /> C) No read down
+              (NRD)</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo2" value="d" /> D) No execute
+              high (NEH)</label
+            >
+            <div id="feedback-modelo2" style="margin-top: 5px"></div>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+            <button type="button" onclick="validarRespuesta('modelo2', 'c')">
+              Validar
+            </button>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
 
-    <button onclick="validarComandos()">Validar comandos</button>
-    <div id="feedback-cmds" class="feedback" style="margin-top: 10px;"></div>
-  </div>
-
-  <!-- Caja de comandos sugeridos -->
-  <div class="referencia-comandos">
-    <p><strong>Comandos disponibles:</strong></p>
-    <ul>
-      <li><code>adduser</code></li>
-      <li><code>touch</code></li>
-      <li><code>chown</code></li>
-      <li><code>chmod</code></li>
-    </ul>
-  </div>
-</div>
-
-
-  </div>
-
-</div>
-
-
-
-  <div class="acordeon-item">
-    <button class="acordeon-btn">6.1.2 Actividad - Control de acceso a los recurso <span class="flecha">▶</span></button>
-<div class="acordeon-panel">
-  <!-- Pregunta de opción múltiple -->
-  <p><strong>1. ¿Cuál es el principal objetivo del control de acceso a los recursos en un sistema informático?</strong></p>
-  <label><input type="radio" name="q1_u612" value="a"> A) Aumentar la velocidad de ejecución de los procesos del sistema.</label><br>
-  <label><input type="radio" name="q1_u612" value="b"> B) Asegurar que solo los usuarios autorizados accedan a recursos específicos del sistema.</label><br>
-  <label><input type="radio" name="q1_u612" value="c"> C) Optimizar el almacenamiento de datos mediante compresión automática.</label><br>
-  <label><input type="radio" name="q1_u612" value="d"> D) Monitorear el uso de software con fines de auditoría y facturación</label><br>
-  <p id="feedback-q1_u612"></p>
-  <button type="button" onclick="validarRespuesta('q1_u612', 'b')">Validar pregunta 1</button>
-      <div id="feedback-cmds" class="feedback" style="margin-top: 10px;"></div>
-  <hr>
-<!-- Título y pregunta -->
-<p><strong>2. Relaciona correctamente cada modelo de control de acceso con su descripción:</strong></p>
-
-<!-- Contenedor de emparejamiento -->
-<div class="emparejamiento">
-  <ul>
-    <li><strong>a)</strong> Este modelo da al propietario de un recurso la capacidad de decidir qué usuarios pueden acceder y qué acciones pueden realizar.</li>
-    <li><strong>b)</strong> Los permisos se asignan a roles dentro de la organización, no directamente a los usuarios.</li>
-    <li><strong>c)</strong> Las decisiones de acceso se rigen por políticas de seguridad que no pueden ser modificadas por los usuarios.</li>
-  </ul>
-  <p>1. Control de Acceso Discrecional (DAC): 
-    <input type="text" id="emp1" placeholder="a, b o c">
-  </p>
-  <p>2. Control de Acceso Obligatorio (MAC): 
-    <input type="text" id="emp2" placeholder="a, b o c">
-  </p>
-  <p>3. Control de Acceso Basado en Roles (RBAC): 
-    <input type="text" id="emp3" placeholder="a, b o c">
-  </p>
-  <div id="feedback-emparejamiento" style="margin-top: 10px;"></div>
-  <!-- Botón y espacio para retroalimentación -->
-  <button type="button" onclick="validarEmparejamiento()">Validar emparejamiento</button>
-  <div id="feedback-emparejamiento" style="margin-top: 10px;"></div>
-</div>
-</div>
-
-  </div>
-
-<div class="acordeon-item">
-  <button class="acordeon-btn">6.1.3 Actividad - Implementación de matrices de acceso <span class="flecha">▶</span></button>
-  <div class="acordeon-panel">
-
-    <!-- Pregunta de opción múltiple -->
-    <p><strong>1. ¿Cuál de las siguientes afirmaciones sobre la matriz de acceso es correcta?</strong></p>
-    <form id="form-matriz">
-      <label><input type="radio" name="opcionMatriz" value="a"> A) Representa usuarios como columnas y recursos como filas</label><br>
-      <label><input type="radio" name="opcionMatriz" value="b"> B) Solo puede aplicarse en sistemas militares</label><br>
-      <label><input type="radio" name="opcionMatriz" value="c"> C) Es una herramienta para visualizar permisos entre sujetos y objetos</label><br>
-      <label><input type="radio" name="opcionMatriz" value="d"> D) Reemplaza completamente el uso de ACLs y capacidades</label><br>
-            <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-      <button type="button" onclick="validarPreguntaMatriz()">Validar pregunta 1</button>
-      <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-    </form>
-<div style="max-width: 600px; margin: 20px auto; padding: 15px; background-color: #f5faff; border-left: 6px solid #0077b6; border-radius: 6px; font-family: 'Segoe UI', sans-serif;">
-  <h4 style="margin-top: 0; color: #003f5c;">Significado de los permisos:</h4>
-  <ul style="padding-left: 20px; margin: 10px 0;">
-    <li><strong>R</strong>: Lectura (el usuario puede ver o abrir el recurso).</li>
-    <li><strong>W</strong>: Escritura (el usuario puede modificar o guardar cambios en el recurso).</li>
-    <li><strong>X</strong>: Ejecución (el usuario puede ejecutar el archivo o programa).</li>
-    <li><strong>RW</strong>: Lectura y escritura.</li>
-    <li><strong>RWX</strong>: Lectura, escritura y ejecución.</li>
-    <li><strong>-</strong>: Sin permisos (el usuario no tiene acceso al recurso).</li>
-  </ul>
-</div>
-
-    <!-- Tabla para completar -->
-    <p><strong>2. Completa la siguiente matriz de acceso con los permisos correspondientes:</strong></p>
-    <div class="tabla-acceso">
-      <table>
-        <thead>
-          <tr>
-            <th>Recurso / Usuario</th>
-            <th>Usuario A</th>
-            <th>Usuario B</th>
-            <th>Usuario C</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Archivo1.txt</td>
-            <td><input type="text" id="mat1" maxlength="3" size="3" placeholder="RW"></td>
-            <td><input type="text" id="mat2" maxlength="3" size="3" placeholder="-"></td>
-            <td><input type="text" id="mat3" maxlength="3" size="3" placeholder="R"></td>
-          </tr>
-          <tr>
-            <td>BaseDatos.db</td>
-            <td><input type="text" id="mat4" maxlength="3" size="3" placeholder="-"></td>
-            <td><input type="text" id="mat5" maxlength="3" size="3" placeholder="RW"></td>
-            <td><input type="text" id="mat6" maxlength="3" size="3" placeholder="RX"></td>
-          </tr>
-          <tr>
-            <td>Aplicación.exe</td>
-            <td><input type="text" id="mat7" maxlength="3" size="3" placeholder="X"></td>
-            <td><input type="text" id="mat8" maxlength="3" size="3" placeholder="RWX"></td>
-            <td><input type="text" id="mat9" maxlength="3" size="3" placeholder="-"></td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="imagen-descripcion">Figura 1. Ejemplo de matriz de acceso. Completa los permisos asignados a cada usuario para cada recurso.</p>
-    </div>
-    <button type="button" onclick="validarMatrizAcceso()">Validar matriz</button>
-    <div id="feedback-matriz" style="margin-top: 10px;"></div>
-
-  </div>
-</div>
-
-<div class="acordeon-item">
-  <button class="acordeon-btn">6.1.4 Actividad - Modelos formales de seguridad <span class="flecha">▶</span></button>
-  <div class="acordeon-panel">
-
-    <!-- Pregunta 1 -->
-    <p><strong>1. ¿Cuál es el principal objetivo del modelo Bell-LaPadula?</strong></p>
-    <label><input type="radio" name="modelo1" value="a"> A) Proteger la integridad de los datos en sistemas financieros</label><br>
-    <label><input type="radio" name="modelo1" value="b"> B) Garantizar la trazabilidad de las operaciones mediante transacciones</label><br>
-    <label><input type="radio" name="modelo1" value="c"> C) Proteger la confidencialidad de la información en sistemas clasificados</label><br>
-    <label><input type="radio" name="modelo1" value="d"> D) Controlar el acceso a redes inalámbricas con cifrado dinámico</label>
-    <div id="feedback-modelo1" style="margin-top: 5px;"></div>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-    <button type="button" onclick="validarRespuesta('modelo1', 'c')">Validar</button>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-    <!-- Pregunta 2 -->
-    <p><strong>2. ¿Qué regla corresponde al modelo Biba para proteger la integridad de los datos?</strong></p>
-    <label><input type="radio" name="modelo2" value="a"> A) No read up (NRU)</label><br>
-    <label><input type="radio" name="modelo2" value="b"> B) No write down (NWD)</label><br>
-    <label><input type="radio" name="modelo2" value="c"> C) No read down (NRD)</label><br>
-    <label><input type="radio" name="modelo2" value="d"> D) No execute high (NEH)</label>
-    <div id="feedback-modelo2" style="margin-top: 5px;"></div>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-    <button type="button" onclick="validarRespuesta('modelo2', 'c')">Validar</button>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-
-    <!-- Pregunta 3 -->
-    <p><strong>3. ¿Qué característica distingue al modelo Clark-Wilson de los modelos Bell-LaPadula y Biba?</strong></p>
-    <label><input type="radio" name="modelo3" value="a"> A) Está basado en sistemas de archivos</label><br>
-    <label><input type="radio" name="modelo3" value="b"> B) Controla exclusivamente el acceso a impresoras</label><br>
-    <label><input type="radio" name="modelo3" value="c"> C) Se aplica en entornos militares con políticas estrictas</label><br>
-    <label><input type="radio" name="modelo3" value="d"> D) Se enfoca en integridad, trazabilidad y separación de funciones</label>
-    <div id="feedback-modelo3" style="margin-top: 5px;"></div>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-    <button type="button" onclick="validarRespuesta('modelo3', 'd')">Validar</button>
-    <div id="feedback-pregunta-matriz" style="margin-top: 10px;"></div>
-  </div>
-</div>
-
-</section>
-
-
-   
-  </main>
-
-  <footer class="footer-oscuro" id="footer">
-    <div class="footer-contenido">
-      <div class="footer-contacto">
-        <p><strong>Escuela Superior de Cómputo</strong> - Sistemas Operativos - Unidad 6</p>
+            <!-- Pregunta 3 -->
+            <p>
+              <strong
+                >3. ¿Qué característica distingue al modelo Clark-Wilson de los
+                modelos Bell-LaPadula y Biba?</strong
+              >
+            </p>
+            <label
+              ><input type="radio" name="modelo3" value="a" /> A) Está basado en
+              sistemas de archivos</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo3" value="b" /> B) Controla
+              exclusivamente el acceso a impresoras</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo3" value="c" /> C) Se aplica en
+              entornos militares con políticas estrictas</label
+            ><br />
+            <label
+              ><input type="radio" name="modelo3" value="d" /> D) Se enfoca en
+              integridad, trazabilidad y separación de funciones</label
+            >
+            <div id="feedback-modelo3" style="margin-top: 5px"></div>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+            <button type="button" onclick="validarRespuesta('modelo3', 'd')">
+              Validar
+            </button>
+            <div id="feedback-pregunta-matriz" style="margin-top: 10px"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER CON INFORMACIONS DEL NUMERO DE UNIDAD-->
+    <footer class="footer-oscuro" id="footer">
+      <div class="footer-contenido">
+        <div class="footer-contacto">
+          <p>
+            <strong>Escuela Superior de Cómputo</strong> - Sistemas Operativos -
+            Unidad 6
+          </p>
+        </div>
+        <hr />
+        <div class="footer-institucional">
+          <p>&copy; 2025 Instituto Politécnico Nacional</p>
+          <p>Av. Luis Enrique Erro S/N, Zacatenco, CDMX</p>
+          <p>
+            Este proyecto es exclusivamente educativo y no posee fines
+            comerciales.
+          </p>
+        </div>
       </div>
-      <hr>
-      <div class="footer-institucional">
-        <p>&copy; 2025 Instituto Politécnico Nacional</p>
-        <p>Av. Luis Enrique Erro S/N, Zacatenco, CDMX</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <button id="scrollTopBtn" title="Ir arriba">↑</button>
-  <script src="script.js"></script>
-</body>
+    <button id="scrollTopBtn" title="Ir arriba">↑</button>
+    <script src="script.js"></script>
+  </body>
 </html>

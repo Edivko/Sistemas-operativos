@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6.1 HOME - ESCOM</title>
+    <title>Sistema Operativos - ESCOM</title>
     <link rel="icon" href="img/logo_escom_ic.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="pagina-teoria">
-    <!-- CONTENEDOR PARA LOGOS INSTITUCIONALES-->
+  <body>
+    <!--<div class="barra-gob"></div>-->
     <div class="contenedor-logos">
       <img src="img/logo_ipn.webp" alt="IPN" class="logo-ipn" />
       <img src="img/logo_escom.png" alt="ESCOM" class="logo-escom" />
@@ -22,62 +23,57 @@
         <a href="#">Protección de Datos</a>
       </div>
     </div>
-    <!--MENU PRINCIPAL-->
+
     <header>
       <h1>ESCOM</h1>
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
       <nav id="nav-menu">
         <a href="index.html">Inicio</a>
+        <a href="6.1Home.html">U 6.1</a>
+        <a href="6.2Home.html">U 6.2</a>
         <a href="HReferencias.html">Referencias</a>
         <a href="Hglosario.html">Glosario</a>
         <a href="mapaSitio.html">Mapa del sitio</a>
       </nav>
     </header>
-    <!--INICIO DEL MAIN: CONTIENE TRES APARTADOS 
-    TEORIA
-    ACTIVIDADES
-    VIDEOS
--->
-    <main>
-      <!-- CONTIENE EL NOMBRE LA UNIDAD EN LA QUE ME ENCUENTRO-->
-      <div class="titulo-ilustracion">
-        <h2>Unidad 6 SEGURIDAD Y VIRTUALIZACION</h2>
-        <h3>6.1 El ambiente de seguridad.</h3>
-      </div>
-      <!-- CONTIENE LOS TRES APARTADOS DE CONTENIDO DE LA UNIDAD-->
-      <section class="cuadros-centrados">
-        <div
-          class="cuadro"
-          style="background-image: url('img/trianguloZ.jpeg')"
-        >
-          <div class="contenido">
-            <h3>TEORÍA</h3>
-            <div class="leer-mas"><a href="6.1Teoria.html">Leer más</a></div>
+
+    <main class="layout-contenido">
+      <section id="mapa-sitio">
+        <h2 class="titulo-ilustracion">Mapa del Sitio</h2>
+        <div class="cuadros-mapa">
+          <div class="cuadro-mapa">
+            <h3>Unidad 6.1</h3>
+            <ul>
+              <li><a href="6.1Home.html">Inicio</a></li>
+              <li><a href="6.1Teoria.html">Teoría</a></li>
+              <li><a href="6.1Videos.html">Videos</a></li>
+              <li><a href="6.1Actividades.html">Actividades</a></li>
+            </ul>
           </div>
-        </div>
-        <div
-          class="cuadro"
-          style="background-image: url('img/trianguloC.jpeg')"
-        >
-          <div class="contenido">
-            <h3>VIDEOS</h3>
-            <div class="leer-mas">Leer más</div>
+
+          <div class="cuadro-mapa">
+            <h3>Unidad 6.2</h3>
+            <ul>
+              <li><a href="6.2Home.html">Inicio</a></li>
+              <li><a href="6.2Teoria.html">Teoría</a></li>
+              <li><a href="6.2Videos.html">Videos</a></li>
+              <li><a href="6.2Actividades.html">Actividades</a></li>
+            </ul>
           </div>
-        </div>
-        <div
-          class="cuadro"
-          style="background-image: url('img/trianguloD.jpeg')"
-        >
-          <div class="contenido">
-            <h3>ACTIVIDADES</h3>
-            <div class="leer-mas">
-              <a href="6.1Actividades.html">Leer más</a>
-            </div>
+
+          <div class="cuadro-mapa">
+            <h3>Otros</h3>
+            <ul>
+              <li><a href="index.html">Inicio general</a></li>
+              <li><a href="HReferencias.html">Referencias</a></li>
+              <li><a href="Hglosario.html">Glosario</a></li>
+              <li><a href="#footer">Contacto (footer)</a></li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
-    <!-- FOOTER CON INFORMACIONS DEL NUMERO DE UNIDAD-->
+
     <footer class="footer-oscuro" id="footer">
       <div class="footer-contenido">
         <div class="footer-contacto">
