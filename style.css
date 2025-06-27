@@ -211,10 +211,12 @@ button:hover {
 .banner .banner-img.active {
   opacity: 1;
 }
+
 .banner-img.portada {
   object-fit: contain !important;
   background-color: white;
 }
+
 
 /* Fin carrusel*/
 
