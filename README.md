@@ -36,16 +36,20 @@ Este sitio web fue desarrollado como actividad integradora de la Unidad 6 (Segur
 
 ## **Autores**
 
-**Cruz Perez Cesar Gabriel**
+- **Cruz Perez Cesar Gabriel**
+
 Estudiante de Ingeniería en Sistemas Computacionales — ESCOM-IPN
 
-**Hernandez De La Cruz Eduardo Ivan**
+- **Hernandez De La Cruz Eduardo Ivan**
+
 Estudiante de Ingeniería en Sistemas Computacionales — ESCOM-IPN
 
-**Saavedra Mata Karla Sofia**
+- **Saavedra Mata Karla Sofia**
+
 Estudiante de Ingeniería en Sistemas Computacionales — ESCOM-IPN
 
-**Sandoval Rodriguez Laura Aide**  
+- **Sandoval Rodriguez Laura Aide**  
+
 Estudiante de Ingeniería en Sistemas Computacionales — ESCOM-IPN
 
 ---
