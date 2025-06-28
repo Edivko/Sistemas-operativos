@@ -834,4 +834,53 @@ button:hover {
 .cuadro-mapa a:hover {
   text-decoration: underline;
 }
+/* seccion de videos css*/
+
+.seccion-videos {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.video-contenedor {
+  margin-bottom: 50px; /* espacio amplio entre videos */
+  text-align: center;
+}
+
+.video-contenedor iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.descripcion-video {
+  background-color: #eaf3fc; /* azul claro */
+  border-left: 4px solid #1a73e8;
+  padding: 12px 20px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.barra-titulo-video {
+  background-color: #004f7c; /* azul institucional */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.barra-titulo-video h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
 

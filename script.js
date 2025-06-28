@@ -62,19 +62,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // === Mostrar el footer cuando se llega al final de la página ===
 const footer = document.querySelector('.footer-oscuro');
+let footerMostrado = false;
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   const windowHeight = window.innerHeight;
   const bodyHeight = document.body.offsetHeight;
 
-  // Mostrar el footer solo al final de la página
-  if (scrollY + windowHeight >= bodyHeight - 10) {
+  if (!footerMostrado && scrollY + windowHeight >= bodyHeight - 10) {
     footer.classList.add('visible');
-  } else {
-    footer.classList.remove('visible');
+    footerMostrado = true;
   }
 });
+
 
 // SCRIPT PARA ACTIVIDADES.
 
