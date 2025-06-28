@@ -882,5 +882,16 @@ button:hover {
   margin: 0;
   font-size: 20px;
 }
+.lista-subtemas {
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+.lista-subtemas li {
+  margin-bottom: 5px;
+  list-style-type: disc;
+}
 
 
